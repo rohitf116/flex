@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace, sans-serif;
+}
+
+.main {
+  /* background-color: aqua; */
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.book-container {
+  background-color: blanchedalmond;
+  align-items: center;
+  /* width: 90wh; */
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.subcategories {
+  background-color: rgb(173, 161, 161);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-shrink: 0; /* Prevent the subcategories from shrinking */
+  position: sticky;
+  top: 0;
+  width: 300px;
+  padding: 20px; /* Adjust as needed for overall padding */
+}
+
+.subcategory {
+  background-color: antiquewhite;
+  padding: 6px; /* Adjust as needed for padding within each subcategory */
+  border-radius: 10px; /* Adjust as needed for border radius */
+  margin: 10px; /* Adjust as needed for space between subcategories */
+}
+
+.book {
+  background-color: azure;
+  margin: 6px;
+  padding: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  align-self: center;
+  flex-basis: 250px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.book p,
+h5 {
+  margin: 6px; /* Set your desired margin value here for child paragraphs */
+}
+.book-cover {
+  width: 250px;
+  height: 350px;
+  border-radius: 16px;
+}
+
+.read-full {
+  background-color: green;
+  display: inline-block;
+  padding: 6px;
+  border-radius: 16px;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.single-book-container {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  align-items: flex-start;
+  gap: 10px;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 100px;
+  /* justify-content: center; */
+}
+
+/* .single-book-container-main {
+  background-color: green;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+} */
+
+.signle-book-cover-container {
+  background-color: beige;
+  flex-basis: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+}
+
+.book-cover-image {
+  width: 250px;
+  height: 350px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.want-to-read-button {
+  background-color: green;
+  padding: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: 800;
+  border: none;
+}
+
+.single-book-desc-container {
+  /* background-color: blue; */
+  flex: 1;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 16px;
+}
+.book-title {
+  margin: 32px;
+  font-size: larger;
+}
+.book-excert {
+  margin: 16px;
+  font-size: small;
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-around;
+}
+
+.genre {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 32px;
+}
+.genre-item {
+  margin: 0 8px;
+  text-decoration: underline green;
+  color: black;
+}
+
+.register {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-form {
+  background-color: blanchedalmond;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.submit {
+  background-color: green;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
