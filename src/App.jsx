@@ -7,6 +7,7 @@ import Subcategories from "./components/subcategoriie";
 import { Route } from "react-router-dom";
 import SingleBook from "./components/SingleBook";
 import RegisterForm from "./components/Register";
+import SignIn from "./components/SignIn";
 
 function App() {
   const subcategories = [
@@ -87,6 +88,7 @@ function App() {
         />
         <Route path="/:id" element={<SingleBook />} />
         <Route path="/register" element={<RegisterForm />} />
+        <Route path="/signin" element={<SignIn />} />
       </Routes>
     </>
   );

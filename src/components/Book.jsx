@@ -6,7 +6,7 @@ const Book = ({ book }) => {
     navigate(`/${id}`);
   };
   const baasImagee =
-    "https://book-management-test-api.s3.ap-south-1.amazonaws.com/ecom/1706384844615pexels-photographie-amg-19898940.jpg";
+    "http://books.google.com/books/content?id=3QOZBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api";
   return (
     <div onClick={() => gotoBook(book.id)} className="book" key={book.id}>
       <img

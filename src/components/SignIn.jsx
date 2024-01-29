@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 
-const RegisterForm = () => {
+const SignIn = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    title: "",
     email: "",
     password: "",
-    phone: "",
   });
 
   const handleChange = (e) => {
@@ -25,15 +22,6 @@ const RegisterForm = () => {
   return (
     <div className="register">
       <form className="register-form" onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-        />
-
         <label htmlFor="email">Email:</label>
         <input
           type="email"
@@ -51,31 +39,17 @@ const RegisterForm = () => {
           value={formData.password}
           onChange={handleChange}
         />
-        <label htmlFor="password">Phone:</label>
-        <input
-          type="number"
-          id="phone"
-          name="phone"
-          value={formData.phone}
-          onChange={handleChange}
-        />
-        <label htmlFor="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          value={formData.password}
-          onChange={handleChange}
-        />
+
         <div className="register-btn-container">
           <button type="submit" className="submit">
-            Register
+            Sign in
           </button>
-          <button className="signin">Sign in</button>
+          <span>Dont have accent click here</span>
+          <button className="Register">Register</button>
         </div>
       </form>
     </div>
   );
 };
 
-export default RegisterForm;
+export default SignIn;
