@@ -200,3 +200,23 @@ input {
 button:hover {
   background-color: darkgreen;
 }
+
+.nav-bar-container {
+  background-color: rgb(179, 142, 142);
+  margin: 10px auto;
+  padding: 24px;
+  text-align: end;
+}
+
+.name-nav-bar {
+  background-color: aqua;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  margin: 6px;
+}
+
+.name-nav-bar:hover {
+  background-color: aliceblue;
+  cursor: pointer;
+}

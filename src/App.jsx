@@ -8,7 +8,10 @@ import { Route } from "react-router-dom";
 import SingleBook from "./components/SingleBook";
 import RegisterForm from "./components/Register";
 import SignIn from "./components/SignIn";
-
+import { useDispatch, useSelector } from "react-redux";
+import { fetchAllBooks } from "./features/bookSlice";
+import { useEffect } from "react";
+import BookForm from "./components/BookForm";
 function App() {
   const subcategories = [
     {
@@ -78,6 +81,18 @@ function App() {
       updatedAt: "2024-01-25T10:08:06.000Z",
     },
   ];
+  // const book = useSelector((state) => state.book);
+  // const { books, status } = book;
+  // const dispatch = useDispatch();
+  // console.log({ books });
+  // useEffect(() => {
+  //   const fetchBooksApi = async () => {
+  //     const data = await dispatch(fetchAllBooks("HII"));
+  //     console.log({ data });
+
+  //   };
+  //   fetchBooksApi();
+  // }, []);
 
   return (
     <>
@@ -86,9 +101,10 @@ function App() {
           path="/"
           element={<Home books={books} subcategories={subcategories} />}
         />
-        <Route path="/:id" element={<SingleBook />} />
         <Route path="/register" element={<RegisterForm />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/:id" element={<SingleBook />} />
+        <Route path="/addbook" element={<BookForm />} />
       </Routes>
     </>
   );

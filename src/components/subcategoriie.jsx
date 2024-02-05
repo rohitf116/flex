@@ -1,4 +1,6 @@
+/* eslint-disable react/prop-types */
 import Subcategory from "./Subcategory";
+import { useLocation, useParams, useSearchParams } from "react-router-dom";
 
 const Subcategories = ({ subcategories }) => {
   return (
